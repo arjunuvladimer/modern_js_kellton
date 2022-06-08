@@ -1,3 +1,4 @@
+
 // Declaration
 var a
 // Intialization
@@ -30,4 +31,65 @@ var obj = {
     lname: "sn",
     id: 123
 }
+
+// Scope of Variables
+// Global Scope
+var h = 10
+console.log(h)
+function display1(){
+    console.log(h)
+}
+// Local Scope / Functional Scope
+function display2(){
+    var i  = 11
+    console.log(i)
+}
+display2()
+// console.log(i)
+// Block Scope
+{
+    var k = 10
+    console.log(k)
+    const l = 12
+    // Note: You can only define const 
+    console.log(l)
+}
+console.log(k)
+// Hoisting
+console.log(j)
+var j
+// Lexical Scope
+
+
+var m = "hello i am a string"
+
+function display3(){
+  
+    console.log(m)
+    function display4(){
+        console.log(m)
+    }
+    display4()
+}
+
+display3()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
