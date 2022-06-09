@@ -6,7 +6,7 @@ var b = 11
 var c = a + b 
 console.log(a++) // 10
 console.log(a)
-console.log(++b)
+console.log(++b) // 12
 console.log(a--) // 11
 console.log(a)
 // RELATIONAL OPERATORS
