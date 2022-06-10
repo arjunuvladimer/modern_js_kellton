@@ -56,7 +56,7 @@ for(var k of array1){
 var l = 10
 while(l< 14){
     console.log(l)
-    l++
+    i++
 }
 // DO WHILE
 var m = 11

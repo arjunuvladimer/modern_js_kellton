@@ -60,7 +60,16 @@ console.log(l << 2)
 var m = 12 // 1100
 // 0011 => 6
 console.log(m >> 2)
+var k = -12
+var q = k>>1
+// 1100 // 0110 >> 6
+console.log("shift of k"+ q)
+// 10 9 8 76543210 -1 -2 -3 -4 -5 -6 -7 .. -12
+// 0 => 0000 // -1 
 // Zero Fill Right Shift(>>>)
+var r = -1
+var s = r >>>1
+console.log("shift of r: " + s)
 
 // MISCILLEANEOUS OPERATORS
 // [typeof, ?(ternary operator), delete, rest operator, spread operator]
