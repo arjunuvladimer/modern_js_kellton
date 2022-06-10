@@ -70,6 +70,7 @@ function display3(){
         console.log(m)
     }
     display4()
+    return 10
 }
 
 display3()
