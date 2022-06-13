@@ -24,11 +24,7 @@ second() // Event Queue 1
 fourth() // Event Queue 2
 third()  // Event Queue 3
 
-// Asynchronous => You don't have an order
-first()
-setTimeout(second,2000) // JS works asynchronously if there is a delay of time
-third()
-fourth()
+
 
 function lady(menu){
     function guy(menu){
@@ -37,7 +33,21 @@ function lady(menu){
     console.log(guy(menu))
 }
 
-lady("pizza")
 
+first() // First Function He starts executing it
+second() // Event Queue 1
+lady("pizza") // Two Dependent Events => Call Stack [lady dependen on the guy to finish]=>  Event Queue 2
+fourth() // Event Queue 3
+third()  // Event Queue 4
+
+
+// ASYNCHRONOUS
+// Delay of time it would make it asynchronous
+// Asynchronous => You don't have an order
+first() // First Function He starts executing it
+third() // Event Queue 1
+setTimeout(second,2000) // JS works asynchronously if there is a delay of time 
+// Event Queue 3
+fourth() // Event Queue 2
 
 

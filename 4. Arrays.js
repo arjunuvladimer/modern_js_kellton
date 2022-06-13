@@ -1,9 +1,9 @@
 // ARRAYS
-var array1 = [1,2,3,4] // Single Dimensional Array
-console.log(array1[2])
-var array2 = [[1,2],[3,4]] // Multi Dimensional Array
-var array3 = [[[1,2,3]]]
-console.log(array3[0][0][2])
+// var array1 = [1,2,3,4] // Single Dimensional Array
+// console.log(array1[2])
+// var array2 = [[1,2],[3,4]] // Multi Dimensional Array
+// var array3 = [[[1,2,3]]]
+// console.log(array3[0][0][2])
 
 // MATRICES
 // ADDITION OF MATRICES
@@ -65,5 +65,40 @@ for(var i = 0; i < matrix1.length; i++){
      }
     }
 }
+
+
+var array1 = new Array(1,2,3,4) // Array Constructor
+var array2 = [5,6,7,8]
+var array3 = [9,10,11,12] 
+
+// 1. Concat Method
+// Syntax: Array.concat()
+// Used: Merging two or more arrays
+var newArray = array1.concat(array2,array3)
+console.log(`Concat Method ${newArray}`)
+
+// 2. Every Method
+// Syntax: Array.every(callback)
+// It gives boolean value as an output
+var isBigEnough = [12,9,44].every(function checkElement(val, idx){
+    return (idx <=2)
+})
+console.log(`Every Method Result: ${isBigEnough}`)
+
+// 3. Filter Method
+// Syntax: Array.filter(callback)
+var filterArray = [12,5,8,130,44]
+var filteredArray = filterArray.filter((element, index) => {
+    return element > 8
+})
+console.log(`Filter Method Result: ${filteredArray}` )
+
+// 4. For Each Method
+// Syntax: Array.forEach(callback)
+var forEachArray = [1,2,3,4,5,23,123]
+var newForEachArray = forEachArray.forEach((element, index) => {
+    console.log(`Element ${element}`)
+})
+console.log(newForEachArray)
 
 
