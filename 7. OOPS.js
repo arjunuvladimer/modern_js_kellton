@@ -13,7 +13,12 @@ class ES6{
        console.log(`Subtract ${c}`)
    }
 }
-
+var objexamp = {
+    a: 10,
+    b: 11,
+    add: () => {},
+    subtract: () => {}
+}
 
 var obj = new ES6(10,11) // Constructor => add, subtract
 obj.add()
@@ -36,6 +41,7 @@ obj1.subract()
   }
   var obj2 = new B()
   obj2.display()
+
   // Multilevel Inheritance
   class C { // Parent Classs
       someProperty(){
@@ -48,6 +54,7 @@ obj1.subract()
   var obj4 = new E()
   obj3.someProperty()
   obj4.someProperty()
+  
   // Hierichical Inheritance
   class grandFather{
       grandFatherProperty(){
