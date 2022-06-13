@@ -101,4 +101,25 @@ var newForEachArray = forEachArray.forEach((element, index) => {
 })
 console.log(newForEachArray)
 
+// 5. Index of Method
+// Syntax: Array.indexOf(searchElement)
+var indexOfArray = [12,5,8,130]
+var newIndexOfArray = indexOfArray.indexOf(8)
+console.log(`Index Of Method: ${newIndexOfArray}`)
 
+// 6. Join Method
+// Syntax: Array.join(seperator)
+var joinArray = ["Hello","How", "Are", "You"]
+var newJoinArray = joinArray.join(" WOw ")
+console.log(`Join Method: ${ newJoinArray}`)
+
+// 7. Split Method
+// Syntax: String.split() // Return an Array
+var stringWithCommas = "I, want, to, come, home"
+var wordArray = stringWithCommas.split(",")
+console.log(`Split Method: ${ wordArray}`)
+
+// 8. Last Index of 
+// Syntax: Array.lastindexof(searchElement)
+var indexLast = [12,5,8,9,6]
+console.log(`Last Index of Method: ${indexLast.lastIndexOf(8)}`)
