@@ -130,12 +130,6 @@ var arrayForMap = [1,2,3,4,5,5,6]
 var newArrayForMap = arrayForMap.map((element) => element * 2)
 console.log(`Map Method: ${newArrayForMap}`)
 
-// - Every => boolean value
-// - Filter => filters and returns filtered values array
-// - For Each => iteration gives output for every iteration
-// - Map => iteration gives output atlast
-// - Some => returns a boolean value just like every
-// - Find => stops iteration when there is a true element that shows up
 
 // 10. Pop Method
 // Pops the last element in the array
@@ -200,3 +194,16 @@ console.log(`To String Method ${typeof [1,2,3,4,5].toLocaleString()}`)
 var num = [0,2,3,4,5]
 var oddNumber = num.find((element) => element %2 == 1)
 console.log(`Find Method: ${oddNumber}`)
+
+
+// Array Destructuring
+var arrayDestruct = ["arrya",2,3,4,5] // Structuring
+var [x,y,z,a,b] = arrayDestruct
+console.log(typeof a) // Destructuring 
+
+// - Every => boolean value
+// - Filter => filters and returns filtered values array
+// - For Each => iteration gives output for every iteration
+// - Map => iteration gives output atlast
+// - Some => returns a boolean value just like every
+// - Find => stops iteration when there is a true element that shows up
